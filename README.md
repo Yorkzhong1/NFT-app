@@ -1,3 +1,15 @@
+ - This is a NFT project which work together with another project:  https://github.com/Yorkzhong1/Whitelist
+ - the smart contract is in the folder: "contract"
+ - to use it:
+   1. deploy the whitelist contract and use its webapp to do whitelist
+   2. then deploy the NFT contract, when deploy it, use the whitelist contract address as input
+   3. then change the smartconttract address under folder "constants"
+   4. use the wallet that deploy the contract, and open the webapp, to "start pre-sales"
+   5. then you can do presales mint
+   6. 5 minutes later, you can do public mint
+  
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
