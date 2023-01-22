@@ -41,7 +41,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a AlphaDAO!");
     } catch (err) {
       console.error(err);
     }
@@ -67,7 +67,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a AlphaDAO!");
     } catch (err) {
       console.error(err);
     }
@@ -231,7 +231,7 @@ export default function Home() {
 
     // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 1337) {
+    if (chainId !== 5) {
       window.alert("Change the network to Goerli");
       throw new Error("Change network to Goerli");
     }
@@ -354,7 +354,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to AlphaDAO!</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
           </div>
@@ -369,7 +369,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by AlphaDAO
       </footer>
     </div>
   );
